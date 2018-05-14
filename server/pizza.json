@@ -1,0 +1,112 @@
+[{
+    "id": 1,
+    "name": "Classic Margherita",
+    "desc": "Mozzarella Cheese | 9 Inch Fluffy Americano Crust | Classic Pizza ",
+    "src": "images/Classic-Margherita.jpg",
+    "indicate": "veg",
+    "price": 290
+}, {
+    "id": 2,
+    "name": "Corn Veggie Delight Pizza",
+    "desc": "Mozzarella Cheese | American Corn | Red Green Bellpeppers | Onion | 9 Inch Fluffy Americano Crust | Classic Pizza ",
+    "src": "images/Corn-Veggie-Delight-Pizza.jpg",
+    "indicate": "veg",
+    "price": 370
+}, {
+    "id": 3,
+    "name": "Exotica Paneer Pizza",
+    "desc": "Mozzarella Cheese | Paneer Tikka | American Corn | Olives | Onion | 9 Inch Fluffy Americano Crust | Classic Pizza ",
+    "src": "images/Exotica-Paneer-Pizza.jpg",
+    "indicate": "veg",
+    "price": 480
+}, {
+    "id": 4,
+    "name": "Middle Eastern Supreme ",
+    "desc": "Mozzarella Cheese | Falafel | Roasted Veggies | Mushroom | Onion | 9 Inch Fluffy Americano Crust | Supreme Pizza",
+    "src": "images/Middle-Eastern-Supreme.jpg",
+    "indicate": "veg",
+    "price": 540
+}, {
+    "id": 5,
+    "name": "Maharaja Veg Pizza",
+    "desc": "Mozzarella Cheese | Paneer Tikka | Smoked Beans | Jalapeno | Bellpeppers | Olives | Onion | 9 Inch Fluffy Americano Crust | Supreme Pizza ",
+    "src": "images/Maharaja-Veg-Pizza.jpg",
+    "indicate": "veg",
+    "price": 600
+},{
+    "id": 6,
+    "name": "Smoked Chicken Sausage Pizza",
+    "desc": "Mozzarella Cheese | Chicken Sausage | Bellpepper | Onion | 9 Inch Fluffy Americano Crust | Classic Pizza",
+    "src": "images/Smoked-Chicken-Sausage-Pizza.jpg",
+    "indicate": "non-veg",
+    "price": 330
+}, {
+    "id": 7,
+    "name": "Chicken Delight Pizza",
+    "desc": "Mozzarella Cheese | Chicken Salami | Bellpepper | American Corn | 9 Inch Fluffy Americano Crust | Classic Pizza ",
+    "src": "images/Chicken-Delight-Pizza.jpg",
+    "indicate": "non-veg",
+    "price": 400
+}, {
+    "id": 8,
+    "name": "Farmfresh Supreme (Tandoori Cheese)",
+    "desc": "Mozzarella Cheese | Mushroom | Corn | Bellpeppers | Onion | 9 Inch Fluffy Americano Crust | Tandoori Cheese | Supreme Pizza",
+    "src": "images/Farmfresh-Supreme-veg.jpg",
+    "indicate": "veg",
+    "price": 520
+}, {
+    "id": 9,
+    "name": "Kheema & Sausage Pizza (Tandoori Cheese)",
+    "desc": "Mozzarella Cheese | Chicken Sausage | Chicken Kheema | Onion | 9 Inch Fluffy Americano Crust | Tandoori Cheese | Supreme Pizza",
+    "src": "images/Kheema-Sausage-Pizza.jpg",
+    "indicate": "non-veg",
+    "price": 530
+}, {
+    "id": 10,
+    "name": "Chicken Tikka & Kheema (Tandoori Cheese)",
+    "desc": "Mozzarella Cheese | Chicken Kheema | Chicken Tikka | Onion | 9 Inch Fluffy Americano Crust | Tandoori Cheese | Supreme Pizza",
+    "src": "images/Chicken-Tikka-Kheema.jpg",
+    "indicate": "non-veg",
+    "price": 400
+}, {
+    "id": 11,
+    "name": "Famous Five (Tandoori Cheese)",
+    "desc": "Mozzarella Cheese | Paneer Tikka | American Corn | Jalapeno | Olives | Onion | 9 Inch Fluffy Americano Crust | Tandoori Cheese | Supreme Pizza ",
+    "src": "images/Famous-Five.jpg",
+    "indicate": "veg",
+    "price": 540
+}, {
+    "id": 12,
+    "name": "Middle Eastern Supreme (Tandoori Cheese)",
+    "desc": "Mozzarella Cheese | Falafel | Roasted Veggies | Mushroom | Onion | 9 Inch Fluffy Americano Crust | Tandoori Cheese | Supreme Pizza ",
+    "src": "images/Middle-Eastern-Supreme-veg.jpg",
+    "indicate": "veg",
+    "price": 400
+}, {
+    "id": 13,
+    "name": "Non-Veg Paradise (Tandoori Cheese)",
+    "desc": "Mozzarella Cheese | Chicken Salami | Chicken Tikka | Chicken Sausage | Onion | 9 Inch Fluffy Americano Crust | Tandoori Cheese | Supreme Pizza ",
+    "src": "images/Non-Veg-Paradise.jpg",
+    "indicate": "non-veg",
+    "price": 540
+}, {
+    "id": 14,
+    "name": "Picante Paneer (Tandoori Cheese)",
+    "desc": "Mozzarella Cheese | Paneer Tikka | Bellpeppers | Olives | Onion | 9 Inch Fluffy Americano Crust | Tandoori Cheese | Supreme Pizza",
+    "src": "images/Picante-Paneer.jpg",
+    "indicate": "veg",
+    "price": 400
+}, {
+    "name": "Mutton Overload Pizza (Tandoori Cheese)",
+    "desc": "Mozzarella Cheese | Mutton | Chicken Kheema | 9 Inch Fluffy Americano Crust | Tandoori Cheese | Supreme Pizza ",
+    "src": "images/Mutton-Overload-Pizza.jpg",
+    "indicate": "non-veg",
+    "price": 660
+}, {
+    "id": 15,
+    "name": "Big Western (Tandoori Cheese)",
+    "desc": "Mozzarella Cheese | Chicken Salami | BBQ Chicken | Onion | 9 Inch Fluffy Americano Crust | Tandoori Cheese | Supreme Pizza",
+    "src": "images/Big-Western.jpg",
+    "indicate": "non-veg",
+    "price": 550
+}]

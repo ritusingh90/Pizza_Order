@@ -7,7 +7,7 @@ Online Pizza Order Page
 
 - You can run your file in http-server.
 
-### install Node.js in your system.
+-  install ### Node.js in your system.
 
 - Go to Project file open command prompt containing folder path
 

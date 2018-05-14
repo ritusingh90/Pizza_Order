@@ -5,7 +5,7 @@
         var items = [];
         var output = '<ul class="pro-list-wrap clearfix">';
     $.each(data, function(i, item) {
-        output += '<li id="'+item.id+'"><div class="block"><div class="img-wrap"><img src="'+ item.src +'"  alt="" title=""></div><h3 class="primary-title"><span class="text">' + item.name + '</span><span class="indicate '+ item.indicate +'"</span></h3><p class="desc">' + item.desc +'</p><p class="price"><i class="fas fa-rupee-sign"></i> <span class="val">' + item.price + '</span><p><a href="javascript:void(0);" class="add-cart">Add to Cart</a></div></li>';
+        output += '<li id="'+item.id+'"><div class="block"><div class="img-wrap"><img src="'+ item.src +'"  alt="" title=""></div><h3 class="primary-title"><span class="text">' + item.name + '</span><span class="indicate '+ item.indicate +'"</span></h3><p class="desc">' + item.desc +'</p><p class="price"><i class="fas fa-rupee-sign"></i> <span class="val">' + item.price + '</span><p class="action-btn"><a href="javascript:void(0);" class="add-cart">Add to Cart</a></div></li>';
     });
     output += '</ul>';
         $('.product-list-cards').html(output);
@@ -16,22 +16,30 @@
     $('#Submit').on('click', function(){
         $.getJSON('server/order.json', function(data1) {
             var items1 = [];
-            var output = '<p class="pro-list-wrap clearfix">';
+            var output = '<p class="popup-text clearfix">';
         $.each(data1, function(i, item1) {
             output += '<span>'+ item1.comment + '</span>';
         });
         output += '</p>';
-            $('.modal .modal-content').html(output);
+            $('.modal .modal-content .modal-body').html(output);
         });
 
         $('.modal').toggle();
+        $('.right-side-cart').removeClass('open-cart');
+        $('.body-overlay').show();
+        
+        //script for hidding dive after settime
+        setTimeout(function() {
+            $('.modal').hide();
+            $('.body-overlay').hide();
+        }, 2500); 
     });
 
 
     //script for on click open right side container 
     $('.header.header ul.navbar li a').on('click', function(){
         $('.right-side-cart').toggleClass('open-cart');
-
+        $('.body-overlay').toggle();
     });
  
 
@@ -52,6 +60,7 @@ $(window).on('load', function(){
     var Arrays = new Array();
     $('.product-list-cards ul li a.add-cart').on('click', function(){
         $('.right-side-cart').addClass('open-cart');
+        $('.body-overlay').toggle();
         var itemid = $(this).parents('li').attr('id');
         var itemname = $(this).parents('li').find('h3').children('span.text').html();
         var itemprice = $(this).parents('li').find('.price').children('span.val').html();
@@ -63,7 +72,6 @@ $(window).on('load', function(){
             qty = parseInt(qty) + parseInt(1);
 			
 			total = parseInt(itemprice) * parseInt(qty);
-            console.log(total);
 
             $('#item-'+itemid).find('.item-price').children('span.val').html(total);
             $('#item-'+itemid).find('.item-qty').html(qty);
@@ -82,7 +90,7 @@ $(window).on('load', function(){
 
             $('.grand-total span.total-amt').html(prevcost);
 			
-			$('.right-side-cart ul').prepend('<li class="shopp" id="item-'+itemid+'"><div class="media"><div class="media-left"><div class="cart-img" ><img src="'+itemimg+'" alt="" title=""></div></div><div class="media-body"><div class="label">'+itemname+'</div><div class="item-price"><i class="fas fa-rupee-sign"></i> <span class="val">'+itemprice+'</span></div><span class="item-qty">1</span><span class="remove"><i class="fas fa-times"></i></span><br class="all" /></div></div></li>');
+			$('.right-side-cart ul').prepend('<li class="shopp" id="item-'+itemid+'"><div class="media"><div class="media-left"><div class="cart-img" ><img src="'+itemimg+'" alt="" title=""></div></div><div class="media-body"><div class="label">'+itemname+'</div><div class="item-price"><i class="fas fa-rupee-sign"></i> <span class="val">'+itemprice+'</span></div><div class="qty-wrap">Quantity : <span class="item-qty">1</span></div><span class="remove"><i class="fas fa-times"></i></span><br class="all" /></div></div></li>');
 
         }
     });
@@ -116,9 +124,9 @@ function startListHeight($tag) {
     function setHeight(s) {
         var max = 0;
         s.each(function() {
-            var h = $(this).height();
+            var h = $(this).outerHeight();
             max = Math.max(max, h);
-        }).height('').height(max);
+        }).outerHeight('').outerHeight(max);
     }
   
     $(window).on('ready load resize', setHeight($tag));
@@ -127,9 +135,10 @@ function startListHeight($tag) {
 
 function include(arr, obj) {
     for(var i=0; i<arr.length; i++) {
-      if (arr[i] == obj) return true;
+      if (arr[i] == obj) 
+      return true;
     }
-  }
+}
   
 
 

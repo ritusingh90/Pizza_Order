@@ -51,6 +51,16 @@ table {
 i.fa-rupee-sign {
     font-size: 13px;
 }
+.body-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.48) ;
+    display: none;
+}
 /*---- Reset CSS end ---*/
 
 
@@ -96,7 +106,7 @@ header.header {
     margin-bottom: 30px;
     box-shadow: 1px 1px 5px #dedede;
     position: relative;
-    z-index: 2;
+    z-index: 3;
     transition: all .5s ease;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
@@ -229,6 +239,10 @@ p {
     font-family: 'Roboto-Medium';
 }
 
+.product-list-cards ul.pro-list-wrap li .block p.desc {
+    padding-bottom: 20px;
+}
+
 .product-list-cards ul.pro-list-wrap li .block p.price i {
     font-size: 13px;
     display: inline-block;
@@ -309,7 +323,7 @@ p {
     right:-400px;
     width: 400px;
     background: #FFF;
-    z-index: 1;
+    z-index: 2;
     top:0;
     box-shadow: 1px 1px 8px #dedede;
     padding:90px 30px 30px 30px;
@@ -338,6 +352,7 @@ p {
     color: #A41206;
     display: inline-block;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .right-side-cart #Submit:hover {
     background: #A41206;
@@ -395,16 +410,48 @@ p {
 /*------ popup modal styling ----*/
 .modal {
     position: fixed;
-    height: 100%;
-    width:100%;
     top: 0;
-    bottom: 0;
-    left : 0;
     right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
     display: none;
+    overflow: hidden;
+    outline: 0;
+    text-align: center;
 }
-.modal .modal-content {
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px; 
+  }
+.modal .modal-dialog {
     width: 650px;
     margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+@media screen and (max-width: 767px) {
+    .modal .modal-dialog {
+        width: 80%;
+    }
+}
+.modal .modal-dialog .modal-content {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 4px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    -ms-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    padding: 30px;
+}
+.modal .modal-dialog .modal-content .popup-text {
+    font-size: 20px;
 }
 /*----- popup modal styling end ---*/

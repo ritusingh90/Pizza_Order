@@ -1,0 +1,410 @@
+/*---- Reset CSS ------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    font: inherit;
+    font-family: 'Roboto-Regular';
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizzing: border-box;
+}
+i.fa-rupee-sign {
+    font-size: 13px;
+}
+/*---- Reset CSS end ---*/
+
+
+/*------ font family -------*/
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.woff') format('woff'),
+            url('../fonts/Roboto-Regular.ttf') format('truetype'),
+            url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg'),
+            url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto-Medium.eot');
+    src: url('../fonts/Roboto-Medium.woff') format('woff'),
+         url('../fonts/Roboto-Medium.ttf') format('truetype'),
+         url('../fonts/Roboto-Medium.svg#Roboto-Medium') format('svg'),
+         url('../fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto-Bold.eot');
+    src: url('../fonts/Roboto-Bold.woff') format('woff'),
+         url('../fonts/Roboto-Bold.ttf') format('truetype'),
+         url('../fonts/Roboto-Bold.svg#Roboto-Bold') format('svg'),
+         url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+} 
+/*----- font family end ----*/  
+
+/*---- Header Styling ------*/
+header.header {
+    background: #f5f5f5;
+    padding: 30px 10px;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 5px #dedede;
+    position: relative;
+    z-index: 2;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    height: 77px;
+}
+header.header.sticky {
+    position: fixed;
+    width: 100%;
+    padding: 20px 10px;
+    height: 60px;
+}
+header.header a {
+    outline: none;
+    text-decoration: none;
+    color: #000;
+}
+header.header ul.navbar {
+    text-align: right;
+    float:right;
+}
+/*---- Header styling end ---*/
+
+/*---- footer Styling ------*/
+footer.footer {
+    background: #f5f5f5;
+    padding: 50px 10px;
+    text-align: center;
+}
+/*---- footer styling end ---*/
+
+
+/*---- Page Styling -------*/
+.container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clearfix {
+    position: relative;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+h3 {
+    font-family: 'Roboto-Medium';
+    font-size: 20px;
+    margin: 5px 0 10px 0;
+    line-height: 24px;
+    color: #A41206;
+}
+
+p {
+    font-size: 15px;
+    color: #222;
+    line-height: 23px;
+}
+
+.product-list-cards ul.pro-list-wrap {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.product-list-cards ul.pro-list-wrap li {
+    list-style: none;
+    float: left;
+    width: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 1200px) {
+    .product-list-cards ul.pro-list-wrap li {
+        width: 33.3333%;
+    }
+}
+@media screen and (max-width: 991px) {
+    .product-list-cards ul.pro-list-wrap li {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .product-list-cards ul.pro-list-wrap li {
+        width: 100%;
+    }
+}
+
+
+.product-list-cards ul.pro-list-wrap li .block {
+    padding:10px;
+    position: relative;
+    padding-bottom: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.11);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.11);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.11);
+    -ms-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.11);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+}
+
+
+.product-list-cards ul.pro-list-wrap li .block > .img-wrap {
+    height: 250px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.product-list-cards ul.pro-list-wrap li .block > .img-wrap > img {
+    min-width: 100%;
+    min-height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    height: auto;
+    max-width:100%; 
+}
+.product-list-cards ul.pro-list-wrap li .block p.price {
+    position: absolute;
+    bottom: 5px;
+    color:#A41206;
+    font-size: 18px;
+    font-family: 'Roboto-Medium';
+}
+
+.product-list-cards ul.pro-list-wrap li .block p.price i {
+    font-size: 13px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.product-list-cards ul.pro-list-wrap li .block p a.add-cart {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    text-decoration: none;
+    border:1px solid #A41206;
+    padding: 5px 10px;
+    color:  #A41206;
+    font-size: 12px;
+    background: transparent;
+    transition: background 0.2s ease-in;
+    -webkit-transition: background 0.2s ease-in;
+    -moz-transition: background 0.2s ease-in;
+    -ms-transition: background 0.2s ease-in;
+}
+.product-list-cards ul.pro-list-wrap li .block p a.add-cart:hover {
+    background: #A41206;
+    color: #FFF;
+}
+.product-list-cards ul.pro-list-wrap li h3 {
+    position: relative;
+    padding-right: 30px;
+}
+.product-list-cards ul.pro-list-wrap li span.indicate {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    margin: auto;
+    height: 20px;
+    width: 20px;
+}
+.product-list-cards ul.pro-list-wrap li span.indicate:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #000;
+}
+.product-list-cards ul.pro-list-wrap li span.indicate.veg:before {
+    border-color: green;
+}
+.product-list-cards ul.pro-list-wrap li span.indicate.non-veg:before {
+    border-color: red;
+}
+.product-list-cards ul.pro-list-wrap li span.indicate:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 2px;
+    right: 0;
+    margin: auto;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #000;
+}
+.product-list-cards ul.pro-list-wrap li span.indicate.veg:after {
+    background: green;
+}
+.product-list-cards ul.pro-list-wrap li span.indicate.non-veg:after {
+    background: red;
+}
+
+.right-side-cart {
+    position: fixed;
+    height: 100%;
+    right:-400px;
+    width: 400px;
+    background: #FFF;
+    z-index: 1;
+    top:0;
+    box-shadow: 1px 1px 8px #dedede;
+    padding:90px 30px 30px 30px;
+    transition: right 0.5s ease-in-out;
+}
+.right-side-cart.open-cart {
+    right: 0;
+}
+.right-side-cart ul li {
+    display: block;
+    position: relative;
+    margin-bottom: 30px;
+}
+.right-side-cart ul li span.remove {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 11px;
+    color: #a41406a8;
+}
+.right-side-cart #Submit {
+    margin-top: 20px;
+    padding:8px 15px;
+    background: transparent;
+    border:1px solid #A41206;
+    color: #A41206;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.right-side-cart #Submit:hover {
+    background: #A41206;
+    color: #FFF;
+}
+.right-side-cart .grand-total span, .right-side-cart .grand-total i {
+    display: inline-block;
+    vertical-align: middle;
+}
+.right-side-cart .grand-total span {
+    font-family: 'Roboto-Bold';
+}
+.right-side-cart .grand-total span.title-text {
+    padding-right: 20px;
+}
+.right-side-cart .grand-total i {
+    padding:0 5px;
+    font-size: 13px;
+}
+.media {
+    display: table;
+    width: 100%;
+}
+.media .media-body {
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 15px;
+    width: calc(100% - 100px);
+}
+.media .media-left {
+    width: 100px;
+    padding-right: 15px;
+}
+.media .media-left .cart-img > img {
+    width:100%;
+}
+.media .media-body .label {
+    padding-bottom: 10px;
+    font-size: 14px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    width: 80%; 
+}
+
+.media .media-body .item-price span.val, .media .media-body .item-price i {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 5px 0 0;
+}
+/*----- Page Styling end ---*/
+
+
+/*------ popup modal styling ----*/
+.modal {
+    position: fixed;
+    height: 100%;
+    width:100%;
+    top: 0;
+    bottom: 0;
+    left : 0;
+    right: 0;
+    display: none;
+}
+.modal .modal-content {
+    width: 650px;
+    margin: 0 auto;
+}
+/*----- popup modal styling end ---*/
